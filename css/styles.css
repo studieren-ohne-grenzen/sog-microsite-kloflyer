@@ -1,0 +1,236 @@
+@font-face{
+  font-family: 'Audimat-Regular';
+  src: url('fonts/audimat-regular-webfont.eot');
+  src: url('fonts/audimat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/audimat-regular-webfont.woff') format('woff'),
+       url('fonts/audimat-regular-webfont.ttf') format('truetype'),
+       url('fonts/audimat-regular-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+  font-family: 'Gudea-Regular';
+  src: url('fonts/gudea-regular-webfont.eot');
+  src: url('fonts/gudea-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/gudea-regular-webfont.woff') format('woff'),
+       url('fonts/gudea-regular-webfont.ttf') format('truetype'),
+       url('fonts/gudea-regular-webfont.svg#webfont') format('svg');
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Audimat-Regular', sans-serif;
+}
+
+body {
+  font-family: 'Gudea-Regular', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:link, a:visited, a:active {
+  color: rgb(0,169,227);
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+header, footer {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(0,48,73);
+  color: #fff;
+  box-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
+
+header {
+  display: table;
+  padding: 0 5em;
+}
+
+header div {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+
+header blockquote {
+  margin: 2em 0;
+  width: 80%;
+}
+
+header blockquote p {
+  font-size: 2em;
+  text-indent: -0.5em;
+  margin: 1em 0;
+}
+
+header blockquote em {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.alumni {
+  width: 80%;
+  margin: 2em;
+}
+
+.progress {
+  width: 100%;
+  height: 2.25em;
+  position: relative;
+  background-color: #eee;
+  margin: 3em 0;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.progress .feeSum {
+  font-size: 1.75em;
+  padding-left: 1em;
+  position: absolute;
+}
+
+.progress .progressBar {
+  background-color: rgb(244,151,33);
+  height: 100%;
+}
+
+.progress .countdown {
+  position: absolute;
+  right: 1em;
+  top: -1em;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  font-size: 1.5em;
+  padding: .7em;
+  text-align: center;
+}
+
+.progress small {
+  font-size: .5em;
+  display: block;
+}
+
+#embed-frame {
+  width: 100%;
+  height: 270px;
+  border: 2px solid;
+}
+
+.rounded {
+  border-radius: 200px;
+}
+
+#warum {
+  border-top: 10px solid #ccc;
+}
+
+#neues li {
+  margin-bottom: .5em;
+}
+
+.content section {
+  overflow: hidden;
+  padding: 3em 5em;
+  border-bottom: 10px solid #ccc;
+}
+
+.content aside {
+  margin-bottom: 1em;
+  max-width: 100%;
+}
+
+.content aside.right-align {
+  margin-left: 2em;
+  float: right;
+}
+
+.content aside.left-align {
+  margin-right: 2em;
+  float: left;
+}
+
+section.last {
+  border-bottom: 0;
+}
+
+footer {
+  padding: 5em;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: bottom right;
+}
+
+footer .logo {
+  width: 200px;
+  float: right;
+}
+
+@media (max-width: 1280px) {
+  header blockquote p {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 0 2em;
+  }
+  header blockquote {
+    margin-top: 2em;
+  }
+  header blockquote p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 760px) {
+  header div {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .alumni {
+    margin: 1em;
+  }
+  header blockquote {
+    padding-top: 0;
+    margin-top: 0;
+    text-align: left;
+    width: 100%;
+  }
+  .content section {
+    padding: 1em;
+  }
+  .content aside.left-align, .content aside.right-align {
+    float: none;
+    text-align: center;
+    margin: 1em 0;
+  }
+  footer .logo {
+    float: none;
+  }
+}
+
+a.button-link {
+	padding: 0.5em 1em;
+	background-color: rgb(0,169,227);
+	font-size: 1.2em;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 2px;
+	border: 0;
+}
